@@ -40,7 +40,7 @@ h1{
 .recipe-item img{
     width: 130px;
     height: 130px;
-    object-fit: cover;
+    object-fit: contain;
 }
 .recipe-item h2{
     margin: 0;
