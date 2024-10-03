@@ -21,11 +21,16 @@ const recipeListEl = document.getElementById("recipe-list")
                 <strong>Ingredients:</strong>
                 ${recipe.extendedIngredients.map((ingredient)=>(
                     ingredient.original
-                )).join(", ")} `  
+                )).join(", ")} ` 
+                
+        const recipeLinkEl=document.createElement("a") 
+        recipeLinkEl.href=recipe.sourceUrl
+        recipeLinkEl.innerText="View More"       
 
         recipeItemEl.appendChild(recipeImgEl)
         recipeItemEl.appendChild(recipeIngredientsEl)
         recipeItemEl.appendChild(recipeTitleEl)
+        recipeItemEl.appendChild(recipeLinkEl)
 
 
         recipeListEl.appendChild(recipeItemEl)
